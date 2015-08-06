@@ -1,4 +1,4 @@
-package com.khashan.util;
+package com.transform.util;
 
 import java.io.IOException;
 import java.io.InputStream;
@@ -13,7 +13,7 @@ import javax.xml.bind.Unmarshaller;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import com.khashan.bean.Urunler;
+import com.transform.bean.Urunler;
 
 public class HttpUtil {
 

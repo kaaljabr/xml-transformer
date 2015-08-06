@@ -1,8 +1,8 @@
-package com.khashan.bean;
+package com.transform.bean;
 
 import javax.xml.bind.annotation.XmlElement;
 
-public class ToUrun {
+public class Urun {
 	private String urunFiyat;
 
 	private String urunGaranti;
@@ -10,6 +10,8 @@ public class ToUrun {
 	private String urunStok;
 
 	private String urunAd;
+
+	private String urunAciklama;
 
 	private String urunKur;
 
@@ -20,13 +22,6 @@ public class ToUrun {
 	private UrunGorsel urunGorsel;
 
 	private String urunKDV;
-
-	private UrunAciklama urunAciklama;
-
-	@XmlElement(name = "UrunAciklama")
-	public void setUrunAciklama(UrunAciklama urunAciklama) {
-		this.urunAciklama = urunAciklama;
-	}
 
 	@XmlElement(name = "UrunFiyat")
 	public void setUrunFiyat(String urunFiyat) {
@@ -46,6 +41,11 @@ public class ToUrun {
 	@XmlElement(name = "UrunAd")
 	public void setUrunAd(String urunAd) {
 		this.urunAd = urunAd;
+	}
+
+	@XmlElement(name = "UrunAciklama")
+	public void setUrunAciklama(String urunAciklama) {
+		this.urunAciklama = urunAciklama;
 	}
 
 	@XmlElement(name = "UrunKur")
@@ -89,6 +89,10 @@ public class ToUrun {
 		return urunAd;
 	}
 
+	public String getUrunAciklama() {
+		return urunAciklama;
+	}
+
 	public String getUrunKur() {
 		return urunKur;
 	}
@@ -109,14 +113,11 @@ public class ToUrun {
 		return urunKDV;
 	}
 
-	public UrunAciklama getUrunAciklama() {
-		return urunAciklama;
-	}
-
 	@Override
 	public String toString() {
 		return "ClassPojo [UrunFiyat = " + urunFiyat + ", UrunGaranti = " + urunGaranti + ", UrunStok = " + urunStok
-				+ ", UrunAd = " + urunAd + ", UrunKur = " + urunKur + ", UrunKategori = " + urunKategori
-				+ ", UrunKod = " + urunKod + ", UrunGorsel = " + urunGorsel + ", UrunKDV = " + urunKDV + "]";
+				+ ", UrunAd = " + urunAd + ", UrunAciklama = " + urunAciklama + ", UrunKur = " + urunKur
+				+ ", UrunKategori = " + urunKategori + ", UrunKod = " + urunKod + ", UrunGorsel = " + urunGorsel
+				+ ", UrunKDV = " + urunKDV + "]";
 	}
 }

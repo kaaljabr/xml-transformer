@@ -1,4 +1,4 @@
-package com.khashan.bean;
+package com.transform.bean;
 
 import javax.xml.bind.annotation.XmlElement;
 

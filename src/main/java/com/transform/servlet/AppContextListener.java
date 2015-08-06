@@ -1,4 +1,4 @@
-package com.khashan.servlet;
+package com.transform.servlet;
 
 import java.util.concurrent.Executors;
 import java.util.concurrent.ScheduledExecutorService;
@@ -11,8 +11,8 @@ import javax.servlet.annotation.WebListener;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import com.khashan.task.TransformTask;
-import com.khashan.util.PropertiesManager;
+import com.transform.task.TransformTask;
+import com.transform.util.PropertiesManager;
 
 @WebListener
 public class AppContextListener implements ServletContextListener {

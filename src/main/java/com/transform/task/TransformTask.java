@@ -1,4 +1,4 @@
-package com.khashan.task;
+package com.transform.task;
 
 import java.io.File;
 import java.util.List;
@@ -12,14 +12,14 @@ import org.jsoup.nodes.Element;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import com.khashan.bean.Row;
-import com.khashan.bean.ToUrnler;
-import com.khashan.bean.ToUrun;
-import com.khashan.bean.Urun;
-import com.khashan.bean.UrunAciklama;
-import com.khashan.bean.Urunler;
-import com.khashan.util.HttpUtil;
-import com.khashan.util.PropertiesManager;
+import com.transform.bean.Row;
+import com.transform.bean.ToUrnler;
+import com.transform.bean.ToUrun;
+import com.transform.bean.Urun;
+import com.transform.bean.UrunAciklama;
+import com.transform.bean.Urunler;
+import com.transform.util.HttpUtil;
+import com.transform.util.PropertiesManager;
 
 public class TransformTask extends TaskExecutor {
 

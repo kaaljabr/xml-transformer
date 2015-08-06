@@ -1,4 +1,4 @@
-package com.khashan.bean;
+package com.transform.bean;
 
 import java.util.ArrayList;
 import java.util.List;
